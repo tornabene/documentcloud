@@ -14,7 +14,7 @@ dc.ui.AnnotationEditor = Backbone.View.extend({
     this._inserts = $('.DV-pageNoteInsert');
     this.redactions = [];
     _.bindAll(this, 'open', 'close', 'drawAnnotation', 'saveAnnotation',
-      'deleteAnnotation', 'createPageNote');
+      'deleteAnnotation', 'createPageNote','hideSaving');
     currentDocument.api.onAnnotationSave(this.saveAnnotation);
     currentDocument.api.onAnnotationDelete(this.deleteAnnotation);
     this._inserts.click(this.createPageNote);
@@ -175,18 +175,36 @@ dc.ui.AnnotationEditor = Backbone.View.extend({
     return _.extend(params, extra || {});
   },
 
+  hideSaving: function(){
+    currentDocument.helpers.setActiveAnnotationIsSaving( false );
+  },
+
+  setSaving: function(){
+    currentDocument.helpers.setActiveAnnotationIsSaving( true );
+  },
+
   createAnnotation : function(anno) {
+    this.setSaving();
     var params = this.annotationToParams(anno);
-    $.ajax({url : this._baseURL, type : 'POST', data : params, dataType : 'json', success : _.bind(function(resp) {
-      anno.server_id = resp.id;
-      this._adjustNoteCount(1, this._kind == 'public' ? 1 : 0);
+    $.ajax({url : this._baseURL, type : 'POST', data : params, dataType : 'json',
+            complete: this.hideSaving,
+            success : _.bind(function(resp) {
+              anno.server_id = resp.id;
+              anno.content = anno.html_content = resp.content;
+              this._adjustNoteCount(1, this._kind == 'public' ? 1 : 0);
     }, this)});
   },
 
   updateAnnotation : function(anno) {
     var url     = this._baseURL + '/' + anno.server_id;
     var params  = this.annotationToParams(anno, {_method : 'put'});
-    $.ajax({url : url, type : 'POST', data : params, dataType : 'json'});
+    this.setSaving();
+    $.ajax({url : url, type : 'POST', data : params, dataType : 'json',
+            complete : this.hideSaving,
+            success:  function( resp ){
+              anno.content = anno.html_content = resp.content;
+            }
+           });
   },
 
   deleteAnnotation : function(anno) {
