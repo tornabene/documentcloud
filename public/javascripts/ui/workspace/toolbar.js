@@ -224,7 +224,7 @@ dc.ui.Toolbar = Backbone.View.extend({
 
     if (Documents.selectedCount) {
       var docs = Documents.chosen();
-      query = _.map(docs, function(doc) { return 'document:' + doc.id }).join(' ');
+      query = _.map(docs, function(doc) { return 'document:' + doc.id; }).join(' ');
     } else {
       query = dc.app.searcher.publicQuery();
     }
@@ -232,8 +232,10 @@ dc.ui.Toolbar = Backbone.View.extend({
     if (/\S/.test(query)) {
       dc.ui.Dialog.confirm(
         'You are about to export to Overview. You must create an Overview account, and you must provide Overview with your DocumentCloud username and password.',
-        function() { window.open("https://www.overviewproject.org/imports/documentcloud/new/" + encodeURIComponent(query), '_blank'); },
-        {
+        function() {
+          window.open("https://www.overviewproject.org/imports/documentcloud/new/" + encodeURIComponent(query), '_blank');
+          return true;
+        },{
           saveText: 'Export',
           closeText: 'Cancel'
         }
