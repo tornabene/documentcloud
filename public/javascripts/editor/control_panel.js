@@ -6,7 +6,7 @@ dc.ui.ViewerControlPanel = Backbone.View.extend({
     'click .set_sections':          'openSectionEditor',
     'click .public_annotation':     'togglePublicAnnotation',
     'click .private_annotation':    'togglePrivateAnnotation',
-    'click .redact_annotation':     'redactionNotice',//'toggleRedaction',
+    'click .redact_annotation':     'toggleRedaction',
     'click .cancel_redactions':     'toggleRedaction',
     'click .save_redactions':       'saveRedactions',
     'click a.when_black':           'toggleRedactionColor',
