@@ -22,7 +22,7 @@ class RedactPages < DocumentAction
       prepare_pdf
       redact
     rescue Exception => e
-      Rails.logger.info `uptime`
+      Rails.logger.info "Redaction Failed!!!\nCurrent Load: #{`uptime`}"
       fail_document
       LifecycleMailer.deliver_exception_notification(e, options)
       raise e
