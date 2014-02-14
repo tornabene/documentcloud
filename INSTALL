@@ -89,33 +89,27 @@ sudo a2enmod ssl
 sudo -s
 cat > /etc/apache2/sites-available/dcloud <<EOF
 <VirtualHost *:80>
-    ServerName dcloud.ntipa.org
-    DocumentRoot /home/tino/develop/rails/documentcloud/public
-    <Location />
-        RewriteEngine on
-        RewriteCond %{HTTPS} off
-        RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R]
-    </Location>
+ServerName dcloud.ntipa.org
+DocumentRoot /home/tino/develop/rails/documentcloud/public
+
+#<Location />
+#RewriteEngine on
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R]
+#</Location>
+
 </VirtualHost>
- 
 <VirtualHost *:443>
-    ServerName dcloud.ntipa.org
-    DocumentRoot /var/www_rails/blog/current/public
-     
-    SSLEngine On
-     
-    SSLProtocol -all +TLSv1 +SSLv3
-    SSLCipherSuite HIGH:MEDIUM:!aNULL:+SHA1:+MD5:+HIGH:+MEDIUM
-     
-    SSLCertificateFile /etc/apache2/ssl/crt/server.crt
-    SSLCertificateKeyFile /etc/apache2/ssl/key/server.key
-     
-    SSLVerifyClient optional
-    SSLVerifyDepth 1
-     
-    SSLOptions +StdEnvVars +StrictRequire
-     
-    CustomLog /var/log/apache2/ssl_request_log "%t %h %{SSL_PROTOCOL}x %{SSL_CIPHER}x \"%r\" %b"
+ServerName dcloud.ntipa.org
+DocumentRoot /home/tino/develop/rails/documentcloud/public
+SSLEngine On
+SSLProtocol -all +TLSv1 +SSLv3
+SSLCipherSuite HIGH:MEDIUM:!aNULL:+SHA1:+MD5:+HIGH:+MEDIUM
+SSLCertificateFile /etc/apache2/ssl/crt/server.crt
+SSLCertificateKeyFile /etc/apache2/ssl/key/server.key
+SSLVerifyClient optional
+SSLVerifyDepth 1
+SSLOptions +StdEnvVars +StrictRequire
 </VirtualHost>
 EOF
 
