@@ -40,15 +40,6 @@ rails -v
 
 
 
-export RAILS_ENV=development
-# setup dummy postgres environment so that you can verify rails is working
-sudo cp /etc/postgresql/9.1/main/pg_hba.conf /etc/postgresql/9.1/main/pg_hba.conf_bck
-sudo cp config/server/postgres/pg_hba.conf  /etc/postgresql/9.1/main/pg_hba.conf
-sudo /etc/init.d/postgresql reload
-sudo -u postgres createuser -s ubuntu
-sudo -u postgres createuser -s documentcloud
-sudo -u postgres psql -c "alter user documentcloud password 'documentcloudVirtualMachine' "
-sudo -u postgres createdb dcloud_$RAILS_ENV
 
 
 
@@ -152,3 +143,16 @@ EOF
 #LoadModule  
 sudo a2enmod passenger
  
+
+
+#ENV CREATE
+
+export RAILS_ENV=development
+# setup dummy postgres environment so that you can verify rails is working
+sudo cp /etc/postgresql/9.1/main/pg_hba.conf /etc/postgresql/9.1/main/pg_hba.conf_bck
+sudo cp config/server/postgres/pg_hba.conf  /etc/postgresql/9.1/main/pg_hba.conf
+sudo /etc/init.d/postgresql reload
+sudo -u postgres createuser -s ubuntu
+sudo -u postgres createuser -s documentcloud
+sudo -u postgres psql -c "alter user documentcloud password 'documentcloudVirtualMachine' "
+sudo -u postgres createdb dcloud_$RAILS_ENV
