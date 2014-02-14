@@ -91,6 +91,8 @@ cat > /etc/apache2/sites-available/dcloud <<EOF
 <VirtualHost *:80>
 ServerName dcloud.ntipa.org
 DocumentRoot /home/tino/develop/rails/documentcloud/public
+RailsEnv development
+RailsAllowModRewrite off
 
 #<Location />
 #RewriteEngine on
@@ -102,6 +104,8 @@ DocumentRoot /home/tino/develop/rails/documentcloud/public
 <VirtualHost *:443>
 ServerName dcloud.ntipa.org
 DocumentRoot /home/tino/develop/rails/documentcloud/public
+RailsEnv development
+RailsAllowModRewrite off
 SSLEngine On
 SSLProtocol -all +TLSv1 +SSLv3
 SSLCipherSuite HIGH:MEDIUM:!aNULL:+SHA1:+MD5:+HIGH:+MEDIUM
@@ -120,6 +124,19 @@ sudo apt-get install mysql-server mysql-client
 gem install mysql
 gem install passenger
 rvmsudo passenger-install-apache2-module
+#LoadModule apache manual or 
 
+cat > /etc/apache2/mods-available/passenger.load  <<EOF
+LoadModule passenger_module /home/tino/.rvm/gems/ruby-2.1.0/gems/passenger-4.0.37/buildout/apache2/mod_passenger.so
+EOF
+
+cat > /etc/apache2/mods-available/passenger.conf  <<EOF
+<IfModule mod_passenger.c>
+PassengerRoot /home/tino/.rvm/gems/ruby-2.1.0/gems/passenger-4.0.37
+PassengerDefaultRuby /home/tino/.rvm/gems/ruby-2.1.0/wrappers/ruby
+</IfModule>
+EOF
+
+#LoadModule  
 sudo a2enmod passenger
-
+ 
