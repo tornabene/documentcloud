@@ -78,7 +78,7 @@ rails server
 
 
 
-#INTSTALLAZIONE APACHE MOD PASSENGER
+#INTSTALLAZIONE APACHE MOD PASSENGER AND SSL
 sudo apt-get install apache2 apache2-mpm-prefork apache2-prefork-dev
 sudo apt-get install mysql-server mysql-client
 gem install mysql
