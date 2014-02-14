@@ -159,3 +159,11 @@ sudo -u postgres createdb dcloud_$RAILS_ENV
 sudo psql dcloud_$RAILS_ENV -U documentcloud -W
 CREATE EXTENSION hstore;
 sudo -u postgres psql -f db/structure.sql dcloud_$RAILS_ENV
+
+
+
+
+#start clouwd
+export RAILS_ENV=development
+crowd -c config/cloud_crowd/development/ server
+crowd -c config/cloud_crowd/development/ node
