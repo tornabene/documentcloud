@@ -80,7 +80,52 @@ rails server
 
 #INTSTALLAZIONE APACHE MOD PASSENGER AND SSL
 sudo apt-get install apache2 apache2-mpm-prefork apache2-prefork-dev
+#cREATE SSL CERTIFICATE FOR APACHE2
+sudo mkdir -p /etc/apache2/ssl/{crt,key}
+sudo openssl req -new -x509 -days 365 -keyout /etc/apache2/ssl/key/server.key -out /etc/apache2/ssl/crt/server.crt -nodes -subj '/O=Ipublic, Ltd/OU=WWW Security Team/CN=dcloud.ntipa.org'
+sudo a2enmod rewrite
+sudo a2enmod ssl
+
+sudo -s
+cat > /etc/apache2/sites-available/dcloud <<EOF
+<VirtualHost *:80>
+    ServerName dcloud.ntipa.org
+    DocumentRoot /home/tino/develop/rails/documentcloud/public
+    <Location />
+        RewriteEngine on
+        RewriteCond %{HTTPS} off
+        RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R]
+    </Location>
+</VirtualHost>
+ 
+<VirtualHost *:443>
+    ServerName dcloud.ntipa.org
+    DocumentRoot /var/www_rails/blog/current/public
+     
+    SSLEngine On
+     
+    SSLProtocol -all +TLSv1 +SSLv3
+    SSLCipherSuite HIGH:MEDIUM:!aNULL:+SHA1:+MD5:+HIGH:+MEDIUM
+     
+    SSLCertificateFile /etc/apache2/ssl/crt/server.crt
+    SSLCertificateKeyFile /etc/apache2/ssl/key/server.key
+     
+    SSLVerifyClient optional
+    SSLVerifyDepth 1
+     
+    SSLOptions +StdEnvVars +StrictRequire
+     
+    CustomLog /var/log/apache2/ssl_request_log "%t %h %{SSL_PROTOCOL}x %{SSL_CIPHER}x \"%r\" %b"
+</VirtualHost>
+EOF
+
+exit
+sudo a2ensite dcloud
+
 sudo apt-get install mysql-server mysql-client
 gem install mysql
 gem install passenger
 rvmsudo passenger-install-apache2-module
+
+sudo a2enmod passenger
+
