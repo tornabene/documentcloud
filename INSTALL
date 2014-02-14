@@ -156,3 +156,6 @@ sudo -u postgres createuser -s ubuntu
 sudo -u postgres createuser -s documentcloud
 sudo -u postgres psql -c "alter user documentcloud password 'documentcloudVirtualMachine' "
 sudo -u postgres createdb dcloud_$RAILS_ENV
+sudo psql dcloud_$RAILS_ENV -U documentcloud -W
+CREATE EXTENSION hstore;
+sudo -u postgres psql -f db/development_structure.sql dcloud_$RAILS_ENV
