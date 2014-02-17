@@ -169,4 +169,6 @@ crowd -c config/cloud_crowd/development/ load_schema
 crowd -c config/cloud_crowd/development/ server -e development
 crowd -c config/cloud_crowd/development/ node -e development
 
+#Dopo la traduzione lanciare questo comando per la genrazione dei file javascript
+bundle exec rake build:translations
 
