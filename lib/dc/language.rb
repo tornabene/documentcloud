@@ -8,12 +8,13 @@ module DC
       'eng' => 'English',
       'spa' => 'Spanish',
       'fra' => 'French',
-      'deu' => 'German'
+      'deu' => 'German',
+      'ita' => 'Italiano'
     }
     SUPPORTED = NAMES.keys
-    DEFAULT = 'eng'
+    DEFAULT = 'ita'
 
-    USER = ['spa','eng']
+    USER = ['ita','spa','eng']
   end
 
 end
