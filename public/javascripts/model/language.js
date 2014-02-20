@@ -5,9 +5,11 @@ dc.language = {
     'eng': 'English',
     'spa': 'Español/Spanish',
     'fra': 'Français/French',
-    'deu': 'Duetch/German'
+    'deu': 'Duetch/German',
+    'ita': 'Italiano'
+
   },
-  USER: ['eng','spa']
+  USER: ['eng','spa','ita']
 };
 
 dc.language.SUPPORTED = _.keys(dc.language.NAMES);
