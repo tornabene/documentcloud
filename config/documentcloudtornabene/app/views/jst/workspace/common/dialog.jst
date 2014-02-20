@@ -1,0 +1,54 @@
+<% if (title) { %>
+  <div class="title"><%= title %></div>
+<% } %>
+<div class="information selectable_text"><%= information || '' %></div>
+<% var spinner_style = mode == 'progress' ? '' : 'display:none;'; %>
+<div class="icon spinner_dark" style="<%= spinner_style %>"></div>
+<% if (description) { %>
+  <div class="description">
+    <%= description %>
+  </div>
+<% } %>
+<% if (text) { %>
+  <div class="text"><%= text %></div>
+<% } %>
+<% if (mode == 'custom') { %>
+  <div class="custom"></div>
+<% } %>
+<% if( mode == 'prompt' || mode == 'short_prompt') { %>
+  <div class="<%= mode %>">
+    <% if (choices && mode == 'short_prompt') { %>
+      <select class="content">
+        <% _.each(choices, function(choice) { %>
+          <option value="<%= choice.value %>" <%= choice.selected ? 'selected="true"' : '' %>><%= choice.text %></option>
+        <% }); %>
+      </select>
+    <% } else if (choices) { %>
+      <div class="choices">
+        <% _.each(choices, function(choice, i) { %>
+          <input class="input" type="radio" name="choice" id="choice_<%= i %>" value="<%= choice.value %>" <%= choice.selected ? 'checked="true"' : '' %>/>
+          <label for="choice_<%= i %>"><%= choice.text %></label>
+          <div class="choice_description selectable_text"><%= choice.description %></div>
+        <% }); %>
+      </div>
+    <% } else if (mode == 'prompt') { %>
+      <textarea class="text_area dark content"></textarea>
+    <% } else { %>
+      <div class="text_input dark">
+        <input class="content" type="<%= password ? 'password' : 'text' %>" value="" />
+      </div>
+    <% } %>
+  </div>
+<% } %>
+<% if (mode != 'progress') { %>
+  <div class="controls">
+    <% var saveText = saveText || ((editor || mode == 'prompt' || mode == 'short_prompt') ? _.t('save') : (mode == 'alert' || mode == 'confirm') ? _.t('ok') : _.t('close') ); %>
+    <% var closeText = closeText || (mode == 'confirm' || saveText == 'Close' ? _.t('cancel') : _.t('close') ); %>
+    <% if (editor) { %>
+      <% var deleteText = deleteText || _.t('delete'); %>
+      <span class="minibutton delete warn"><%= deleteText %></span>
+    <% } %>
+    <span class="minibutton cancel dark"><%= closeText %></span>
+    <span class="minibutton ok default"><%= saveText %></span>
+  </div>
+<% } %>

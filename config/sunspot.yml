@@ -1,8 +1,8 @@
 production:
   solr:
-    hostname: ec2-23-20-237-32.compute-1.amazonaws.com
-    port: 7377
-    path: /solr/production
+    hostname: localhost
+    port: 8983
+    path: /solr/collection1
     read_timeout: 2
     open_timeout: 0.5
     log_level: INFO
@@ -13,7 +13,7 @@ production:
 development:
   solr:
     hostname: localhost
-    port: 7377
+    port: 8983
     log_level: ALL
     path: /solr/collection1
     pid_dir: tmp/pids

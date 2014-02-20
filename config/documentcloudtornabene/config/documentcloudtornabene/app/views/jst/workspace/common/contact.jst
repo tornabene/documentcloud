@@ -1,0 +1,13 @@
+<div class="text">
+  <%= _.t('form_contact_instructions', '<a href="mailto:support@documentcloud.org">support@documentcloud.org</a>', '<a href="/contact">documentcloud.org/contact</a>' ) %>
+</div>
+
+<% if (!dc.account) { %>
+<div class="text_input dark small">
+  <input name="email" class="contact_email" type="text" placeholder="<%= _.t('email') %>&hellip;" />
+</div>
+<% } %>
+
+<div class="prompt">
+  <textarea class="text_area dark small content" placeholder="<%= _.t('message') %>&hellip;"></textarea>
+</div>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <%= render :partial => 'common/meta_tags' %>
+  <title><%= @title ? "#{@title} - " : '' %>DocumentCloud</title>
+  <%= include_stylesheets :ui, :home %>
+  <!--[if lt IE 9]>
+    <%= include_stylesheets :ie_only, :embed_assets => false %>
+  <![endif]-->
+  <%= include_javascripts :core, :home %>
+  <% if Rails.env.production? %>
+    <%= render :partial => 'common/google' %>
+  <% end %>
+  <%= csrf_meta_tag %> 
+</head>
+<body class="<%= @bodyclass %>">
+
+  <div id="grid"></div>
+  <div id="overlay"></div>
+
+  <%= render :partial => 'home/nav' %>
+
+  <div id="sky"></div>
+
+  <% if (@bodyclass == 'homepage') && @document %>
+    <a id="workspace_link" href="/public/search/"></a>
+    <div id="docs_wrapper">
+      <img id="document_stack" alt="" src="/images/home/art.png" />
+      <a id="featured_document" target="_blank" title="<%= h @document.title %>" href="<%= @document.published_url %>">
+        <img width="212" height="276" src="<%= @document.page_image_url(1, 'normal') %>" />
+      </a>
+    </div>
+  <% else %>
+    <a id="logo" href="/"><img src="/images/home/logo.png" alt="DocumentCloud" /></a>
+  <% end %>
+
+  <% if @header %>
+    <h1><%= @header %></h1>
+  <% end %>
+
+  <div id="container">
+    <%= render :partial => 'home/sidebar' %>
+    <%= yield %>
+    <br class="clear" />
+  </div>
+
+  <%= render :partial => 'home/footer' %>
+
+  <%= render :partial => 'common/bootstrap', :locals => {:workspace => false} %>
+
+</body>
+</html>

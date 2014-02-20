@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="it">
 <head>
   <%= render :partial => 'common/meta_tags' %>
-  <title><%= @title ? "#{@title} - " : '' %>DocumentCloud</title>
+  <title><%= @title ? "#{@title} - " : '' %>Ntipa Document</title>
   <%= include_stylesheets :ui, :home %>
   <!--[if lt IE 9]>
     <%= include_stylesheets :ie_only, :embed_assets => false %>
@@ -14,13 +14,13 @@
   <% end %>
   <%= csrf_meta_tag %> 
 </head>
-<body class="<%= @bodyclass %>">
-
+<body  >
+<!--
   <div id="grid"></div>
   <div id="overlay"></div>
-
+-->
   <%= render :partial => 'home/nav' %>
-
+ 
   <div id="sky"></div>
 
   <% if (@bodyclass == 'homepage') && @document %>
@@ -32,13 +32,13 @@
       </a>
     </div>
   <% else %>
-    <a id="logo" href="/"><img src="/images/home/logo.png" alt="DocumentCloud" /></a>
+   <h1>NtipaDocument</h1>
   <% end %>
 
   <% if @header %>
     <h1><%= @header %></h1>
   <% end %>
-
+ 
   <div id="container">
     <%= render :partial => 'home/sidebar' %>
     <%= yield %>

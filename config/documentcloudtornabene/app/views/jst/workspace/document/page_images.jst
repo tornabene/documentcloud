@@ -1,0 +1,35 @@
+<div class="page_list">
+  <div class="pages_header">
+    <span class="icon cancel_search" title="hide pages"></span>
+    <span class="pages_title interface noselect">
+      <% if (start > 1) { %>
+        <span class="arrow left">&larr;</span>
+      <% } %>
+      <% if (total > limit) { %>
+        <b><%= start %> &ndash; <%= end %></b> of
+      <% } %>
+      <% var totalLine = _.t('x_pages', total) %>
+      <% if (total <= limit) { %>
+        <b class="pages_only"><%= totalLine %></b>
+      <% } else { %>
+        <%= totalLine %>
+      <% } %>
+      <% if (end < total) { %>
+        <span class="arrow right">&rarr;</span>
+      <% } %>
+    </span>
+    <span class="text_link open_pages noselect"><%= _.t('open_in_viewer') %></span>
+  </div>
+  <% for (var page = start, l = end; page <= l; page++) { %>
+    <div class="page" data-page="<%= page %>">
+      <div class="page_icon">
+        <% if (notes[page]) { %>
+          <div class="icon mini_note"></div>
+        <% } %>
+        <img class="page_image" alt="" src="<%= doc.pageThumbnailURL(page, 'small') %>" />
+        <div class="page_number"><%= _.t('pg') %> <%= page %></div>
+      </div>
+    </div>
+  <% } %>
+  <div class="clear"></div>
+</div>

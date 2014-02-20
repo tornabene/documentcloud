@@ -1,0 +1,12 @@
+<div class="tweet <%= index == 1 ? 'right' : '' %>">
+  <div class="bird"></div>
+  <div class="content">
+    <div class="text">
+      &ldquo;<%= dc.inflector.autolink(text, true) %>&rdquo;
+    </div>
+    <div class="user sans">
+      &mdash; <a class="name" href="http://twitter.com/<%= user.screen_name %>"><%= user.name %></a>,
+      <a class="date" href="http://twitter.com/<%= user.screen_name %>/status/<%= id_str %>"><%= date %></a>
+    </div>
+  </div>
+</div>

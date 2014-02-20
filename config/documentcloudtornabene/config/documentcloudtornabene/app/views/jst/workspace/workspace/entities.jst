@@ -1,0 +1,37 @@
+<% var empty = true; %>
+<% _.each(dc.model.Entity.ORDER, function(category, i) { %>
+  <% var list = entities[category] || []; %>
+  <% if (list.length) { %>
+    <% empty = false; %>
+    <div class="section <%= i == 0 ? 'first' : '' %>">
+      <div class="category interface"><%= dc.model.Entity.DISPLAY_NAME[category] %></div>
+      <div class="rows">
+        <% _.each(list.slice(0, limit), function(facet) { %>
+          <div class="row <%= facet.active ? 'active' : '' %>" data-value="<%= facet.value %>" data-category="<%= category %>">
+            <span class="facet interface"><%= facet.value %></span>&nbsp;<span class="count" title="<%= _.t('mentioned_in_documents',facet.count) %></span>&nbsp;<span class="show_pages text_link interface"><%= _.t('show_pages') %></span>
+            <% if (facet.active) { %>
+              <div class="icon cancel_search" title="<%= _.t('remove_entity') %>"></div>
+            <% } %>
+          </div>
+        <% }); %>
+      </div>
+      <% if (list.length == 6) { %>
+        <div class="more text_link interface" data-category="<%= category %>"><%= _.t('show_more') %>&hellip;</div>
+      <% } else if (list.length > 6) { %>
+        <div class="less text_link interface" data-category="<%= category %>"><%= _.t('show_less') %>&hellip;</div>
+      <% } %>
+    </div>
+  <% } %>
+<% }); %>
+<% if (empty) { %>
+  <div class="no_results">
+    <%= _.t('no_entities_found') %>
+  </div>
+<% } else { %>
+  <div class="block explanation">
+    <%= _.t('entities_explained') %>
+    <a class="calais_info text_link" href="http://opencalais.com/" target="_blank">
+      <div class="icon calais_30"></div><%= _.t('calais_credit') %>
+    </a>
+  </div>
+<% } %>

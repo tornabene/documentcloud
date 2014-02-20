@@ -1,0 +1,30 @@
+<script type="text/javascript">
+  window.currentDocumentModel = <%=raw @current_document.to_json({:cache_busting=>true}); %>;
+  window.SERVER_ROOT_HTTP = '<%=raw DC.server_root(:ssl => false) %>';
+
+  DV.jQuery(function() {
+    <% if @current_account %>
+      var docId = <%=raw @current_document.id %>;
+      var opts        = {
+        isOwner         : <%=raw !!@allowed_to_edit %>,
+        isReviewer      : <%=raw !!@allowed_to_review %>
+      }
+      <% if @reviewer_inviter %>
+        opts['reviewerInviter'] = {
+          fullName : "<%=raw @reviewer_inviter.full_name %>",
+          email    : "<%=raw @reviewer_inviter.email %>"
+        }
+      <% end %>
+      dc.app.editor.initialize(docId, opts);
+    <% end %>
+    currentDocument.$('.DV-logoLink, .DV-footerLogoLink').attr({
+      href  : 'http://www.documentcloud.org',
+      title : 'DocumentCloud'
+    });
+    var contributor = currentDocument.api.getContributor();
+    var org = currentDocument.api.getContributorOrganization();
+    if (contributor && org) {
+      currentDocument.$('.DV-contributor').text(_.t('contributed_by') +": " + contributor + ', ' + org);
+    }
+  });
+</script>

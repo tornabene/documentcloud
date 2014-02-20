@@ -6,8 +6,8 @@
   <% if @current_account && !@current_account.reviewer? %>
 
     <div class="sidebar_section">
-      Welcome, <%= @current_account.full_name %>.
-      <a href="/"><span class="minibutton default">Start using DocumentCloud</span></a>
+      Benvenuto, <%= @current_account.full_name %>.
+      <a href="/"><span class="minibutton default">Entra in NtipaDocument</span></a>
     </div>
 
   <% end %>
@@ -15,8 +15,7 @@
 
   <div id="search_wrapper" class="sidebar_section">
     <div id="search_desc">
-      Search thousands of public documents<br />
-      from newsrooms across the country:
+    Cercare migliaia di documenti pubblici :
     </div>
     <div id="search_box_wrapper" class="text_input search noselect">
       <div class="icon search_glyph"></div>
@@ -48,13 +47,13 @@
           </div>
         </div>
         <span class="minibutton" id="login_button">Log in</span>
-        <a class="reset_password" href="/reset_password">Forgot your password?</a>
+        <a class="reset_password" href="/reset_password">Hai dimenticato la password?</a>
         <input type="submit" class="hidden_submit" />
       </form>
     </div>
 
   <% end %>
-  
+  <!--
   <div id="news" class="sidebar_section">
     <div class="section_title">
       News
@@ -65,30 +64,32 @@
       </li>
     </ul>
   </div>
-
+-->
   <div id="about" class="sidebar_section">
     <div class="section_title">
       About DocumentCloud
     </div>
     <ul>
+      <!--
       <li><a href="/featured">Featured Reporting</a></li>
       <li><a class="external_link" href="http://blog.documentcloud.org/">Latest Updates</a></li>
       <li><a href="/faq">Frequently Asked Questions</a></li>
       <li><a href="/contributors">Document Contributors</a></li>
+    <li><a href="/contact">Contact Us</a></li>
       <li><a href="/news">In the News</a></li>
+    -->
       <li><a href="/help/api">The DocumentCloud API</a></li>
-      <li><a href="/contact">Contact Us</a></li>
+      
     </ul>
   </div>
 
   <% if @title != 'Contact' && (!@current_account || @current_account.reviewer?) %> 
-
-    <div id="join" class="sidebar_section">
+<!--    <div id="join" class="sidebar_section">
       DocumentCloud is a tool for journalists.<br />
       If you're reporting on or publishing primary source documents, we can help.
       <a href="/contact"><span class="minibutton default">Join DocumentCloud</span></a>
     </div>
-
+-->
   <% end %>
 
 </div>

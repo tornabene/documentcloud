@@ -1,0 +1,12 @@
+<% if @current_account %>
+  <%= include_stylesheets :ui %>
+  <%= include_stylesheets :viewer_editing %>
+  <!--[if lt IE 9]>
+    <%= include_stylesheets :ie_only, :embed_assets => false %>
+  <![endif]-->
+  <%= include_javascripts :core %>
+  <%= include_javascripts :editor %>
+  <script type="text/javascript">
+    <%= render :partial => 'accounts/current_account.js', :type => :js %>
+  </script>
+<% end %>

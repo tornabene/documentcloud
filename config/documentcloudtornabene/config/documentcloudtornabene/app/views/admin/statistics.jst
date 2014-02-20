@@ -1,0 +1,281 @@
+<table>
+  <thead></thead>
+  <tbody>
+
+    <!-- Big Numbers -->
+
+    <tr class="data">
+      <td width="25%"><div class="number"><%= total_documents %></div></td>
+      <td width="25%"><div class="number"><%= private_docs %></div></td>
+      <td width="25%"><div class="number"><%= total_pages %></div></td>
+      <td width="25%"><div class="number"><%= average_page_count %></div></td>
+    </tr>
+    <tr class="labels">
+      <td>Total Documents</td>
+      <td>Private Documents</td>
+      <td>Total Pages</td>
+      <td>Average Pages / Document</td>
+    </tr>
+
+    <tr class="data">
+      <td width="25%"><div class="number"><%= public_docs %></div></td>
+      <td width="25%"><div class="number"><%= embedded_documents %></div></td>
+      <td width="25%"><div class="number"><%= pending_docs %></div></td>
+      <td width="25%"><div class="number"><%= error_docs %></div></td>
+    </tr>
+    <tr class="labels">
+      <td>Public Documents</td>
+      <td>Published Documents</td>
+      <td>Pending Documents</td>
+      <td>Failed or Broken Documents</td>
+    </tr>
+
+    <tr class="data">
+      <td width="25%"><div class="number"><%= remote_url_hits_last_week %></div></td>
+      <td width="25%"><div class="number"><%= remote_url_hits_all_time %></div></td>
+      <td width="25%"><div class="number"><%= count_organizations_embedding %></div></td>
+      <td width="25%"><div class="number"><%= count_total_collaborators %></div></td>
+    </tr>
+    <tr class="labels">
+      <td>Hits on published documents - past week</td>
+      <td>Hits on published documents - all time</td>
+      <td>Organizations Embedding Documents</td>
+      <td>Collaborators on Documents</td>
+    </tr>
+    
+    <!-- Document and Page Charts -->
+
+    <tr class="data">
+      <td colspan="2">
+        <div class="chart_col">
+          <div id="daily_docs_chart" class="chart"></div>
+        </div>
+      </td>
+      <td colspan="2">
+        <div class="chart_col">
+          <div id="weekly_docs_chart" class="chart"></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="labels">
+      <td colspan="2">This Month: <b>Daily</b> Documents &amp; Pages</td>
+      <td colspan="2">All Time: <b>Weekly</b> Documents &amp; Pages</td>
+    </tr>
+    
+    <!-- Hit Charts -->
+
+    <tr class="data">
+      <td colspan="2">
+        <div class="chart_col">
+          <div id="daily_hits_chart" class="chart"></div>
+        </div>
+      </td>
+      <td colspan="2">
+        <div class="chart_col">
+          <div id="weekly_hits_chart" class="chart"></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="labels">
+      <td colspan="2">This Month: <b>Daily</b> Hits on Published Documents</td>
+      <td colspan="2">All Time: <b>Weekly</b> Hits on Published Documents</td>
+    </tr>
+    
+    <!-- Recent 5 docs -->
+
+    <tr class="data">
+      <td colspan="4">
+        <table class="documents">
+          <thead>
+            <td>Cover</td>
+            <td>ID</td>
+            <td>Title</td>
+            <td>Contributor</td>
+            <td>Organization</td>
+            <td>Pages</td>
+            <td></td>
+          </thead>
+          <tbody>
+            <% _.each(Documents.models.reverse(), function(doc) { %>
+              <tr>
+                <td class="first"><img class="doc" src="<%= doc.get('thumbnail_url') %>" /></td>
+                <td><%= doc.get('id') %></td>
+                <td><%= doc.get('public') ? dc.inflector.truncate(doc.get('title') || '', 50) : '<i>private</i>' %></td>
+                <td><%= doc.get('account_name') %></td>
+                <td><%= doc.get('organization_name') %></td>
+                <td><%= doc.get('page_count') %></td>
+                <td class="last"></td>
+              </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr class="labels">
+      <td colspan="4">Most Recent 5 Uploaded Documents</td>
+    </tr>
+    
+    <!-- Popular Docs -->
+
+    <%= JST['top_documents']({}) %>
+    <tr class="labels top_documents_label_week">
+      <td colspan="4">
+        <div class="float_right more_top_documents text_link">All Published Documents</div>
+        <a class="float_right download_csv text_link" href="/admin/top_documents_csv.csv">Download CSV</a></div>
+        Top 5 Most Popular Published Documents - Past 7 days
+      </td>
+    </tr>
+    <tr class="labels top_documents_label_year">
+      <td colspan="4">
+        Most Popular Published Documents - Past year
+      </td>
+    </tr>
+    
+    <!-- Popular Notes -->
+
+    <%= JST['top_notes']({}) %>
+    <tr class="labels top_notes_label_week">
+      <td colspan="4">
+        Top 5 Most Popular Published Notes - Past 7 days
+      </td>
+    </tr>
+    
+    <!-- Popular Notes -->
+
+    <%= JST['top_searches']({}) %>
+    <tr class="labels top_searches_label_week">
+      <td colspan="4">
+        Top 5 Most Popular Search Embeds - Past 7 days
+      </td>
+    </tr>
+    
+    <!-- Breakdown by the numbers -->
+    
+    <tr class="data">
+      <td colspan="4">
+        <table id="numbers">
+          <thead>
+            <td>Model</td>
+            <td>Past Day</td>
+            <td>Past Week</td>
+            <td>Past Month</td>
+            <td>Past 6 Months</td>
+            <td>Total</td>
+            <td></td>
+          </thead>
+          <tbody>
+            <% _.each(stats.numbers, function(numbers, model) { %>
+              <tr>
+                <td class="first"><%= model %></td>
+                <td><%= numbers.day %></td>
+                <td><%= numbers.week %></td>
+                <td><%= numbers.month %></td>
+                <td><%= numbers.half_year %></td>
+                <td><%= numbers.total %></td>
+                <td class="last"></td>
+              </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr class="labels">
+      <td colspan="5">Breakdown by the Numbers</td>
+    </tr>
+    
+    <!-- EC2 Instances -->
+
+    <tr class="data">
+      <td colspan="4">
+        <table id="instances">
+          <thead>
+            <td>Instance Type</td>
+            <td>Tag</td>
+            <td>ID</td>
+            <td>State</td>
+            <td>DNS (External)</td>
+            <td>DNS (Internal)</td>
+            <td></td>
+          </thead>
+          <tbody>
+            <% _.each(stats.instances, function(instance) { %>
+              <% var id = instance.aws_instance_id; %>
+              <tr>
+                <td><%= instance.aws_instance_type %></td>
+                <td><%= instance_tags[id] || '<div class="icon minus" data-id="' + id + '"></div>' %></td>
+                <td><%= id %></td>
+                <td><%= instance.aws_state %></td>
+                <td><%= instance.dns_name %></td>
+                <td><%= instance.private_dns_name %></td>
+                <td class="last"></td>
+              </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr class="labels">
+      <td colspan="4">Active EC2 Instances</td>
+    </tr>
+    
+    <!-- Failed Uploads -->
+
+    <tr class="data">
+      <td colspan="4">
+        <table class="documents">
+          <thead>
+            <td>ID</td>
+            <td>Title</td>
+            <td>Contributor</td>
+            <td>Organization</td>
+            <td>Source</td>
+            <td>Pages</td>
+            <td>Date</td>
+            <td></td>
+          </thead>
+          <tbody>
+            <% _.each(FailedDocuments.models.reverse(), function(doc) { %>
+              <tr>
+                <td class="first">
+                  <a target="_blank" title="open pdf" href="<%= doc.get('pdf_url') %>">
+                    <%= doc.get('id') %>
+                  </a>
+                </td>
+                <td><%= doc.get('public') ? dc.inflector.truncate(doc.get('title') || '', 50) : '<i>private</i>'  %></td>
+                <td><%= doc.get('account_name') %></td>
+                <td><%= doc.get('organization_name') %></td>
+                <td><%= doc.get('public') ? dc.inflector.truncate(doc.get('source') || '', 25) : '<i>private</i>'  %></td>
+                <td><%= doc.get('page_count') %></td>
+                <td><%= doc.get('created_at') %></td>
+                <td class="last"></td>
+              </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr class="labels">
+      <td colspan="4">Most Recent 3 Failed Uploads</td>
+    </tr>
+    
+    <!-- Accounts -->
+
+    <tr class="data accounts_row" style="display:none;">
+      <td colspan="4">
+        <div id="accounts_wrapper">
+        </div>
+      </td>
+    </tr>
+    <tr class="labels accounts_row" style="display:none;">
+      <td colspan="4">
+        <a class="float_right download_csv text_link" href="/admin/accounts_csv.csv">Download CSV</a>
+        All Accounts and Organizations
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<div id="load_all_accounts" class="minibutton float_left">Load All Accounts</div>
+<a class="minibutton download_csv float_left" href="/admin/accounts_csv.csv">Download CSV</a>
+<br class="clear" />

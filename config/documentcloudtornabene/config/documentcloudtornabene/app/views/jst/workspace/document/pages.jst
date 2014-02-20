@@ -1,0 +1,34 @@
+<%
+  var numbers = [];
+  var mentions = _.sortBy(_.flatten(doc.pageEntities.map(function(ent) {
+    return _.map(_.sortBy(ent.get('excerpts'), function(obj) {
+      return obj.offset;
+    }), function(obj) {
+      numbers.push(obj.page_number);
+      return {id : ent.id, page_number : obj.page_number, excerpt : obj.excerpt, offset : obj.offset};
+    });
+  })), function(page) {
+    return page.page_number;
+  });
+  var pageCount = _.uniq(numbers).length;
+%>
+<% if (pageCount) { %>
+  <div class="pages_header">
+    <span class="icon cancel_search" title="hide pages"></span>
+    <span class="pages_title interface"><%= pageCount >= 200 ? _.t('over_x_mentions', 200 ) : _.t('x_mentions',mentions.length) %>
+    <%= _.t('of') %> <%= dc.inflector.commify( doc.uniquePageEntityValues(), {quote : true, conjunction : _.t('or') }) %>
+    <%= _.t('on') %> <%= pageCount %>
+    <%= _.t('page', pageCount ) %></span>
+  </div>
+  <% _.each(mentions, function(mention) { %>
+    <div class="page" data-page="<%= mention.page_number %>" data-id="<%= mention.id %>" data-offset="<%= mention.offset %>">
+      <div class="page_icon">
+        <img class="page_image" alt="page <%= mention.page_number %>" src="<%= doc.pageThumbnailURL(mention.page_number) %>" />
+        <div class="page_number"><%= _.t('pg') %> <%= mention.page_number %></div>
+      </div>
+      <div class="page_excerpt noselect"><%= dc.inflector.trimExcerpt(mention.excerpt) %></div>
+      <div class="clear"></div>
+    </div>
+  <% }); %>
+  <div class="clear"></div>
+<% } %>

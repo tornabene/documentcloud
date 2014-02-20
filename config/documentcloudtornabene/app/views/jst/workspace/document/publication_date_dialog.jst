@@ -1,0 +1,13 @@
+<div class="description">
+<%= _.t('private_documents_visible_instructions', documentCount, '<span class="text_link public_now">','</span>' ) %>
+</div>
+
+<%= _.t('make_public_on') %>:
+<span class="datetime">
+  <%= JST['common/date_select']({date : date}) %>
+</span>
+
+<%= _.t('at') %>
+<span class="datetime">
+  <%= JST['common/hour_select']({date : date}) %>
+</span>
