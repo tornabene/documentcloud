@@ -13,7 +13,7 @@ username = ask("Enter your username:  ") { |q| q.echo = true }
 password = ask("Enter your password:  ") { |q| q.echo = "*" }
 
 
-SPREADSHEET_KEY = '0Avx72osb7YIxdHVCVVczak9ySmh1VGRBUTBEdkU4Q1E'
+SPREADSHEET_KEY = '0AlCwBktk3VuvdDdxcjNDTkVCS3JmUGg1UDRPN3FwVWc'
 
 session = GoogleDrive.login( username, password )
 

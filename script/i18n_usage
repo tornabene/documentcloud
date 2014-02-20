@@ -10,7 +10,10 @@ clear
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 STRING=$1
 FOUND=false
+echo 'DIR '$DIR
+echo 'STRING '$STRING
 
+echo '1'
 grep -n --color=always -r  "_.t('$STRING'" \
     --exclude=$DIR/../public/javascripts/translations/*js \
     $DIR/../app/views/jst \
@@ -18,14 +21,14 @@ grep -n --color=always -r  "_.t('$STRING'" \
 if [ ${PIPESTATUS[0]} -eq 0 ]; then
     FOUND=true
 fi
-
+echo '2'
 grep -n --color=always -r  "DV.t('$STRING'" \
     --exclude=$DIR/../../viewer/public/javascripts/DV/schema/translation* \
     $DIR/../../viewer/public/javascripts | sed 's/.*\.\./../'
 if [ ${PIPESTATUS[0]} -eq 0 ]; then
     FOUND=true
 fi
-
+echo '3'
 if [ $FOUND == false ]; then
     echo 'Translation not found, falling back to looking for raw string'
     grep -n --color=always -r  $STRING \

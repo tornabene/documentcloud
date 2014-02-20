@@ -12,7 +12,7 @@ common: &common
   pg: p.
   # Is scattered thourout the interface as a shortcut for page.
 
-  finish: Fin
+  finish: Fine
   next: Avanti
   # Is used in a but1ton on multiple dialogs.  For example in the workspace, click a document and click the Publish menu, then select Embed Document Viewer
 
@@ -21,7 +21,7 @@ common: &common
   # Used as button on multiple dialogs.  The 'Edit Document Information' dialog, accessed by right-clicking on a document in the workspace is an example.
 
   save_as_draft: Salva in bozza
-  publish: Publica
+  publish: Pubblica
   # These appears on the Annotation dialog.  To view, create a new public annotation using the interface and it will appear as one of the dialog's buttons.
 
   contributed_by: Contributed by
@@ -441,10 +441,10 @@ workspace:
   make_document_public: Make document public
   document_publish_public_help: This document is public. It is currently available to users who search DocumentCloud's catalog and will be visible to the public when you embed it on your website. Change the %saccess level%s.                         
   document_publish_private_help: This document is private. It will not be visible to
-    your readers until you make it public. Change the %saccess level%s now or %s publication
+    your readers until you make it public. Change the %saccess level%s now or %s Pubblication
     date
   set_the: set the
-  document_publish_embed_test: If you want to test the embed before publication, make
+  document_publish_embed_test: If you want to test the embed before Pubblication, make
     sure to edit the embed code to use secure HTTPS URLs, and then switch back to regular
     HTTP before making the document public.
   full_page: Full Page
@@ -482,8 +482,8 @@ workspace:
 
 
   ###############################################################
-  # Publication date dialog
-  # Opened by selecting "Set Publication Date" from Publish menu
+  # Pubblication date dialog
+  # Opened by selecting "Set Pubblication Date" from Publish menu
   private_documents_visible_instructions:
   - This document is private.  You must make it public before it will be visible on   \
     your website or in searches of DocumentCloud's catalog. You can choose to make it \
@@ -491,8 +491,8 @@ workspace:
   - These documents are private.  You must make them public before they will be visible \
     on your website or in searches of DocumentCloud's catalog. You can choose to make  \
     them public at a future date or you can %2$schange them now%3$s.
-  set_publication_date_for: Set publication date for %s
-  no_past_publication: "You can't set a document to be published in the past."
+  set_Pubblication_date_for: Set Pubblication date for %s
+  no_past_Pubblication: "You can't set a document to be published in the past."
   make_public_on: Make public on
   at: at
   public_on: Public on
@@ -590,7 +590,7 @@ workspace:
   # Note embed dialog.  Select a Document in the organizer,
   # then select "Embed A Note" from the Publish menu
   note_embed_private: 'This document is private: notes on this document will not be visible to the public until the document is public.  Change the %saccess level%s now or'
-  publication_date: publication date
+  Pubblication_date: Pubblication date
   choose_note: Choose note
   select_with_public_note: Please select a document with at least one public note.
   embed_note_step_one: 'Step One: Select a Note to Embed'
@@ -648,8 +648,8 @@ workspace:
   your_documents: Tuoi Documenti
   annotated_documents: Documenti Annotati
   popular_documents: Documenti popolari
-  published_documents: Documenti publicati
-  your_published_documents: Tuoi Documenti publicati
+  published_documents: Documenti Pubblicati
+  your_published_documents: Tuoi Documenti Pubblicati
 
   # These are displayed by the search when it doesn't return any results
   # Different stings are displayed depending on what was searched for.
@@ -667,7 +667,7 @@ workspace:
   sort: Ordina
   projects: Progetti
   analyze: Analizza
-  publish: Publica
+  publish: Pubblica
 
   # This error is displayed if attempting to open
   # more than one document at a time using the "Open" menu
@@ -734,7 +734,7 @@ workspace:
   select_single_to_embed: Please select a single document in order to create the embed.
   embed_document_list: Embed Document List
   embed_a_note: Embed a Note
-  set_publication_date: Set Publication Date
+  set_Pubblication_date: Set Pubblication Date
   download_viewer: Download Document Viewer
   x_is_not_published: "\"%s\" is not published."
   no_permission_to_edit_x: "You don\'t have permission to edit \"%s\"."
