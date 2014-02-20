@@ -24,11 +24,11 @@ common: &common
   publish: Pubblica
   # These appears on the Annotation dialog.  To view, create a new public annotation using the interface and it will appear as one of the dialog's buttons.
 
-  contributed_by: Contributed by
+  contributed_by: Contributo di
   reviewer: Reviewer
   # Document's description in organizer, makes up the text that appears under the document title
 
-  search: Cerca
+  search: Ricerca
   # The placeholder text in the search input box.
 
   
@@ -46,7 +46,7 @@ common: &common
   # Cancel button on all dialogs
 
   private_note_visible: Questa è una nota visibile solo da te.
-  draft_note_visible:   This draft is only visible to you and collaborators.
+  draft_note_visible:   Questa nota è visibile solo a voi e collaboratori.
   # These appear on the bottom of each annotation to explain to whom the note is visible.
 
   log_out: Esci
@@ -57,7 +57,7 @@ common: &common
   # This is the mouse-over text for the pencil icon that appears beside the document's data 
   # under the title in the organizer
 
-  private_note: Note private
+  private_note: Nota Privata
   # The mouseover text on private notes.  To view hover your mouse over the padlock icon on a private note
 
   page:
@@ -74,12 +74,12 @@ common: &common
   x_documents:
   - '%d Documento'
   - '%d Documenti'
-  organizations_documents: Documents belonging to %s
+  organizations_documents: Documenti appartenenti a %s
   # Used all over, an example is the project listing, document data dialog, and most of the dialogs for the data elements in the viewer.
 
   x_collaborators:
-  - One Collaborator
-  - '%d Collaborators'
+  - Un Collaboratore
+  - '%d Collaboratori'
   # projects listing on left of organizer
 
   note: 
