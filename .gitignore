@@ -10,12 +10,10 @@ db/mongodb*
 db/solr_*
 db/sphinx
 raw
-/bin
-/secrets
-public/docs
 public/asset_store
 public/document-viewer/images/*.psd
 solr/collection1/data
+solr/data
 *.swp
 *~
 .#*
