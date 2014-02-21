@@ -222,7 +222,7 @@ workspace:
   save_text: Save Text
   edit_text_any_page: Edit the text of any page.
   change_page_arrows: Change pages with the arrows on the right.
-  select_pages_remove: Select the pages you wish to remove.
+  select_pages_remove: Selezionare le pagine che si desidera rimuovere.
   save_page_order: Save Page Order
   reorder_hint: Reorder pages by dragging and dropping.
   upload_pages: Upload Pages
@@ -1062,7 +1062,7 @@ workspace:
   save_text: Save Text
   edit_text_any_page: Edit the text of any page.
   change_page_arrows: Change pages with the arrows on the right.
-  select_pages_remove: Select the pages you wish to remove.
+  select_pages_remove: Selezionare le pagine che si desidera rimuovere.
   save_page_order: Save Page Order
   reorder_hint: Reorder pages by dragging and dropping.
   upload_pages: Upload Pages
