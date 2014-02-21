@@ -777,7 +777,7 @@ workspace:
 
 viewer:
   <<: *common
-  CLOSE: CHIUDI
+  CLOSE: CLOSE
   # Displayed at top-right of pages after searching in the viewer
   
   click_add_page_note: Click per Aggiungere una Nota
