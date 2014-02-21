@@ -464,7 +464,7 @@ workspace:
     viewer%s.
   back: Back
   close: Close
-  step_x_of_x: Step %d of %d
+  step_x_of_x: Step %d di %d
   embed_step_one_title: "Step One: Review \"%s\""
   embed_step_two_title: "Step Two: Configure the Document Viewer"
   embed_step_three_title: "Step Three: Copy and Paste the Embed Code"
@@ -632,12 +632,12 @@ workspace:
   # Initially the sort order is diplsayed at the bottom of the page, but can be
   # modified by clicking and seelcting a different option from the dialog or by 
   # selecting one of the options from the 'Sort' menu.
-  sort_documents_by: Sort Documents By
-  by_relevance: by relevance
-  by_title: by title
-  by_date: by date
-  by_source: by_source
-  by_length: by length
+  sort_documents_by: Ordina Documenti per
+  by_relevance: per rilevanza
+  by_title: per titolo
+  by_date: per data
+  by_source: per sorgente
+  by_length: per lunghezza
 
 
   # These are used to filter the documents that appear 
