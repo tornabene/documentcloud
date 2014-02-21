@@ -178,8 +178,8 @@ workspace:
   embed_tools: Strumenti embed
   embed_document: Embed questo Documento
   embed_note: Embed una Nota
-  page_tools: Page Tools
-  insert_replace_pages: Insert/Replace Pages
+  page_tools: Strumenti Pagina
+  insert_replace_pages: Inserire/sostituire le pagine
   replace_page_x: Replace page %d
   replace_multiple_pages: Replace pages between %d and %d
   insert_first_page: Insert before first page
@@ -191,19 +191,19 @@ workspace:
   insert_pages_message: "This document will close while it's being rebuilt.  Long documents may take a long time to rebuild."
   insert_pages_shift_key: Hold down the shift key to select multiple pages to replace \
                           at once. When you're ready, click the "Upload Pages" button.
-  remove_pages: Remove Pages
-  remove_pages_click: Click on each page you want to remove from this document.
-  remove_pages_done: "When you're finished selecting pages, click the \"Remove Pages\" button."
+  remove_pages: Rimuovi Pagine
+  remove_pages_click: Clicca su ogni pagina che si desidera rimuovere dal documento.
+  remove_pages_done: "Quando hai terminato di selezionare le pagine, fare clic sul bottone \"Rimuovi Pagine\"."
   remove_pages_input:
-  - Remove Page
-  - Remove %d Pages
+  - Rimuovi Pagina
+  - Rimuovi %d Pagine
   remove_page_warning_message:
-  - You've selected a page for removal. This document will close while it's being rebuilt. Are you sure you're ready to proceed?
-  - You've selected %d pages for removal. This document will close while it's being rebuilt. Are you sure you're ready to proceed?
-  removing: Removing...
-  pages_are_being_removed: The pages are being removed. Please close this document.
-  cannot_remove_all: You can't remove all the pages from this document.
-
+  - Hai selezionato una pagina per la rimozione. Il documento si chiude mentre viene ricostruita. Sei sicuro che siete pronti a procedere?
+  - Hai selezionato %d pagine per la rimozione. Il documento si chiude mentre viene ricostruita. Sei sicuro che siete pronti a procedere?
+  removing: Cancellazione...
+  pages_are_being_removed: Le pagine vengono rimossi. Si prega di chiudere questo documento.
+  cannot_remove_all: Non è possibile rimuovere tutte le pagine di questo documento.
+  
   reorder_pages: Riordina Pagine
   reorder_pages_instructions: Drag and drop pages to change their position in the document.
   reorder_pages_done: "When you're finished rearranging, click on the \"Save Page Order\" button to save your changes."
@@ -1018,8 +1018,8 @@ workspace:
   embed_tools: Strumenti embed
   embed_document: Embed questo Documento
   embed_note: Embed una Nota
-  page_tools: Page Tools
-  insert_replace_pages: Insert/Replace Pages
+  page_tools: Strumenti Pagina
+  insert_replace_pages: Inserire/sostituire le pagine
   replace_page_x: Replace page %d
   replace_multiple_pages: Replace pages between %d and %d
   insert_first_page: Insert before first page
@@ -1031,18 +1031,18 @@ workspace:
   insert_pages_message: "This document will close while it's being rebuilt.  Long documents may take a long time to rebuild."
   insert_pages_shift_key: Hold down the shift key to select multiple pages to replace \
                           at once. When you're ready, click the "Upload Pages" button.
-  remove_pages: Remove Pages
-  remove_pages_click: Click on each page you want to remove from this document.
-  remove_pages_done: "When you're finished selecting pages, click the \"Remove Pages\" button."
+  remove_pages: Rimuovi Pagine
+  remove_pages_click: Clicca su ogni pagina che si desidera rimuovere dal documento.
+  remove_pages_done: "Quando hai terminato di selezionare le pagine, fare clic sul bottone \"Rimuovi Pagine\"."
   remove_pages_input:
-  - Remove Page
-  - Remove %d Pages
+  - Rimuovi Pagina
+  - Rimuovi %d Pagine
   remove_page_warning_message:
-  - You've selected a page for removal. This document will close while it's being rebuilt. Are you sure you're ready to proceed?
-  - You've selected %d pages for removal. This document will close while it's being rebuilt. Are you sure you're ready to proceed?
-  removing: Removing...
-  pages_are_being_removed: The pages are being removed. Please close this document.
-  cannot_remove_all: You can't remove all the pages from this document.
+  - Hai selezionato una pagina per la rimozione. Il documento si chiude mentre viene ricostruita. Sei sicuro che siete pronti a procedere?
+  - Hai selezionato %d pagine per la rimozione. Il documento si chiude mentre viene ricostruita. Sei sicuro che siete pronti a procedere?
+  removing: Cancellazione...
+  pages_are_being_removed: Le pagine vengono rimossi. Si prega di chiudere questo documento.
+  cannot_remove_all: Non è possibile rimuovere tutte le pagine di questo documento.
 
   reorder_pages: Riordina Pagine
   reorder_pages_instructions: Drag and drop pages to change their position in the document.
