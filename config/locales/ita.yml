@@ -777,28 +777,28 @@ workspace:
 
 viewer:
   <<: *common
-  CLOSE: CLOSE
+  CLOSE: CHIUDI
   # Displayed at top-right of pages after searching in the viewer
   
-  click_add_page_note: Click to Add a Page Note
+  click_add_page_note: Click per Aggiungere una Nota
   # Displayed when the mouse is moved into the gap between pages while adding a note
 
-  contents: Contents
+  contents: Contenuto
   # Section heading that appears under the forward-back page controls at the top of the sidebar.  Is hidden by default
 
   container_not_found: 'Document Viewer container element not found:'
   # Error message that is displayed when a document is incorrectly embedded
 
-  dl_as_pdf: Download this document as a PDF
+  dl_as_pdf: Download questo documento come PDF
   # The link to download the document that is located on the right sidebar
 
-  expand: Expand
+  expand: Espandi
   # generic expander element. ( DV/views/navigationExpander.js )
 
-  link_to_note: Link to this note
+  link_to_note: Collegamento a questa nota
   # displays while hovering the mouse over the chain icon beside a note's title
 
-  loading: Loading
+  loading: Caricamento
   # This message is displayed on the background of pages while the images for them are loading
 
   next: Successivo
@@ -808,8 +808,8 @@ viewer:
   # These strings are displayed as navigation on annotations
   # They are hidden and shown as appropriate. 
 
-  note_by: Note by %s
-  annotation_title: Annotation Title
+  note_by: Nota di %s
+  annotation_title: Titolo Annotato
   # Used as a placeholder on the title text input when creating a new annotation
 
   print_document_help: To print the document, click the "Original Document" link to open the original PDF. At this time it is not possible to print the document with annotations.
@@ -819,7 +819,7 @@ viewer:
   # On document's sidebar, it links to the related article.
   # Only displays if an related article url is entered for document
 
-  text: Text
+  text: Testo
   # The 'Text' tab on the document.  The other tabs are in the common strings section
 
   must_upgrade: 'To use the Document Viewer you need to upgrade your browser:'
@@ -838,7 +838,7 @@ viewer:
   zoom: Zoom
   # Appears at the top of the document, directly to the left of the Zoom control.
 
-  for: for
+  for: per
   # used in constructing sentence for number of search results.
   # Either: Page 1 of X "for" <term> or: No results "for" <term>
 
