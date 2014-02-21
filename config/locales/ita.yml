@@ -384,14 +384,13 @@ workspace:
   # Can be opened by selecting one or more documents then 
   # selecting "Edit Document Data" from the Edit menu
   edit_document_pairs:
-  - Edit key/value pairs describing this document.
-  - Edit key/value pairs describing these documents.
-  or_remove_all_data: or %sremove all data%s.
-  for_example_data: 'For example: &ldquo;birth: 1935-01-08&rdquo;, or &ldquo;status:
-    released&rdquo;'
-  edit_data_for: Edit Data for %s
-  bad_data_key: '%s cannot be used as a key'
-  confirm_remove_all_data: Are you sure you want to remove all data from %s?
+  - Modifica coppie chiave/valore che descrivono questo documento.
+  - Modifica coppie chiave/valore che descrivono tali documenti.
+  or_remove_all_data: o %s rimuovi tutti i dati %s.
+  for_example_data: 'Per esempio: &ldquo;birth: 1935-01-08&rdquo;, or &ldquo;status: released&rdquo;'
+  edit_data_for: Modifica Dati per %s
+  bad_data_key: '%s non puo essere usata una chiave'
+  confirm_remove_all_data: Sei sicuro di voler rimuovere tutti i dati da %s?
 
 
 
@@ -1225,16 +1224,13 @@ workspace:
   # Can be opened by selecting one or more documents then 
   # selecting "Edit Document Data" from the Edit menu
   edit_document_pairs:
-  - Edit key/value pairs describing this document.
-  - Edit key/value pairs describing these documents.
-  or_remove_all_data: or %sremove all data%s.
-  for_example_data: 'For example: &ldquo;birth: 1935-01-08&rdquo;, or &ldquo;status:
-    released&rdquo;'
-  edit_data_for: Edit Data for %s
-  bad_data_key: '%s cannot be used as a key'
-  confirm_remove_all_data: Are you sure you want to remove all data from %s?
-
-
+  - Modifica coppie chiave/valore che descrivono questo documento.
+  - Modifica coppie chiave/valore che descrivono tali documenti.
+  or_remove_all_data: o %s rimuovi tutti i dati %s.
+  for_example_data: 'Per esempio: &ldquo;birth: 1935-01-08&rdquo;, or &ldquo;status: released&rdquo;'
+  edit_data_for: Modifica Dati per %s
+  bad_data_key: '%s non puo essere usata una chiave'
+  confirm_remove_all_data: Sei sicuro di voler rimuovere tutti i dati da %s?
 
   ###############################################################
   # Edit Document Information dialog
@@ -1524,7 +1520,7 @@ workspace:
   enter_url_for_embed: 
   - Enter the URL at which this document is embedded
   - Enter the URL at which these documents are embedded
-  edit_document_data: Edit Document Data
+  edit_document_data: Modifica dati Documento
   modify_original_document: Modify Original Document
   delete_documents: 
   - Delete Document
