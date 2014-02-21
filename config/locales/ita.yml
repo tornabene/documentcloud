@@ -208,7 +208,7 @@ workspace:
   reorder_pages: Riordina Pagine
   reorder_pages_instructions: Trascinare e rilasciare le pagine di cambiare la loro posizione nel documento.
   reorder_pages_done: "Quando hai finito riordinare, fare clic sul \" Salva pagina ordine \"per salvare le modifiche."
-  text_tools: Text Tools
+  text_tools: Strumenti Testo
   edit_page_text: Modifica Testo della Pagina
   edit_page_text_instructions: 'Edit the text of any page: use the navigation arrows
     at the top to page through this document. Editing the text here will not alter the
@@ -1048,7 +1048,7 @@ workspace:
   reorder_pages: Riordina Pagine
   reorder_pages_instructions: Trascinare e rilasciare le pagine di cambiare la loro posizione nel documento.
   reorder_pages_done: "Quando hai finito riordinare, fare clic sul \" Salva pagina ordine \"per salvare le modifiche."
-  text_tools: Text Tools
+  text_tools: Strumenti Testo
   edit_page_text: Modifica Testo della Pagina
   edit_page_text_instructions: 'Edit the text of any page: use the navigation arrows
     at the top to page through this document. Editing the text here will not alter the
