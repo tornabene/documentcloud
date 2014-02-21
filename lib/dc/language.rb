@@ -12,7 +12,7 @@ module DC
       'ita' => 'Italiano'
     }
     SUPPORTED = NAMES.keys
-    DEFAULT = 'ita'
+    DEFAULT = 'eng'
 
     USER = ['ita','spa','eng']
   end

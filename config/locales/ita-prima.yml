@@ -502,7 +502,7 @@ workspace:
   # The Document right-click menu for documents
   # Appears when a documents icon is right-clicked in the organizer
   view_pages: View Pages
-  edit_document_information: Modifica Documento Info
+  edit_document_information: Modifica Info Documento
   set_access: Set Access Level
   remove_from_project: Remove from this Project
   open_published_version: Open Published Version 
@@ -674,17 +674,17 @@ workspace:
   select_single_to_open: Please select a document to open.
 
   # "Edit" menu of the toolbar
-  edit_document_info: Modifica Informazioni Documento
-  title: Titolo
-  source: Sorgente
-  access_level: Livello Accesso
-  related_article_url: Articolo Collegato URL
-  published_url: URL Pubblica
+  edit_document_info: Modifica Info Documento
+  title: Title
+  source: Source
+  access_level: Access Level
+  related_article_url: Related article URL
+  published_url: Published URL
   enter_url_for_embed: 
   - Enter the URL at which this document is embedded
   - Enter the URL at which these documents are embedded
-  edit_document_data: Modifica dati Documento
-  modify_original_document: Modifica  Documento Originale
+  edit_document_data: Edit Document Data
+  modify_original_document: Modify Original Document
   delete_documents: 
   - Delete Document
   - Delete Documents
@@ -979,31 +979,36 @@ workspace:
   #  Many of them do not appear until the parent option is selected.
   #
   ###############################################################
-  document_tools: Strumenti Documento
-  add_note_instructions: Evidenziare una parte della pagina, oppure fare clic tra le pagine per creare una nota.
-  add_public_note: Aggiungi una nota Pubblica
-  add_public_note_warn: Note pubbliche sono visibili a tutti gli utenti che visualizzano questo documento.
-  add_private_note: Aggiungi una nota Privata
-  add_private_note_warn: Nessuno a parte te è mai permesso di visualizzare le note privati​​.
-  redact_document: Redigere dei documenti
-  red: rosso
+  document_tools: Documento Tools
+  add_note_instructions: Highlight a portion of the page, or click between pages to
+    create a note.
+  add_public_note: Add a Public Note
+  add_public_note_warn: Public notes are visible to everyone who views this document.
+  add_private_note: Add a Private Note
+  add_private_note_warn: No one apart from you is ever allowed to view your private
+    notes.
+  redact_document: Redact Document
+  red: red
   title: Titolo
-  black: black
-  redact_instructions: Fare clic e trascinare per disegnare un rettangolo di  %s su ogni parte del documento che vuoi redigere. Testo associato verrà rimosso quando si salvano le redazioni.
-  notes_hidden_while_redacting: Eventuali note esistenti vengono temporaneamente nascosti mentre la redazione è in corso.
-  revoke: Revoca
-  save_redactions: Salva redazioni
+  black: vuoto
+  redact_instructions: Click and drag to draw a %s rectangle over each portion of the \
+    document you'd like to redact. Associated text will be removed when you save your \
+    redactions.
+  notes_hidden_while_redacting: Any existing notes are temporarily hidden while redaction
+    is taking place.
+  revoke: Revoke
+  save_redactions: Save Redactions
   redaction_close_while_processing: 
   - "You've redacted a passage. This document will close while it's being rebuilt. Are you sure you're ready to proceed?"
   - "You've redacted %d passages. This document will close while it's being rebuilt. Are you sure you're ready to proceed?"
   close_while_redacting: The document is being redacted. It will close while processing.
   edit_sections: Modifica Sezione
-  edit_document_info: Modifica Info Documento
+  edit_document_info: Modifica Documento Info
   edit_title: Modifica Titolo
   edit_source: Modifica Sorgente
   edit_description: Modifica Descrizione
   edit_access: Modifica Livello di Accesso
-  access_level_edit_closing: Modifica del livello di accesso avrà pochi istanti. Il documento si chiude mentre elabora.
+  access_level_edit_closing: Changing the access level will take a few moments. The document will close while it processes.
   document_access_updated:
   - Access updated for the document
   - Access updated for %d documents
@@ -1343,7 +1348,7 @@ workspace:
   # The Document right-click menu for documents
   # Appears when a documents icon is right-clicked in the organizer
   view_pages: View Pages
-  edit_document_information: Modifica Documento Info
+  edit_document_information: Edit Document Information
   set_access: Set Access Level
   remove_from_project: Remove from this Project
   open_published_version: Open Published Version 
@@ -1515,7 +1520,7 @@ workspace:
   select_single_to_open: Please select a document to open.
 
   # "Edit" menu of the toolbar
-  edit_document_info: Modifica Info Documento
+  edit_document_info: Edit Document Information
   title: Title
   source: Source
   access_level: Access Level

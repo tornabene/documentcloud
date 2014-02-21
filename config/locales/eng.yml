@@ -842,5 +842,5 @@ viewer:
   # used in constructing sentence for number of search results.
   # Either: Page 1 of X "for" <term> or: No results "for" <term>
 
-  original_document_pdf: Original Document (PDF)
+  original_document_pdf: Documento Originale (PDF)
   # The download link for documents.  Is located on the sidebar of the viewer.
