@@ -2,9 +2,6 @@
 # Strings that are in this section are shared between the viewer and workspace
 common: &common
 
-  original_document_pdf: Documento Originale (PDF)
-  # The download link for documents.  Is located on t
-
   draft: Bozza
   # The label that's applied to a note when it's a draft.  Is displayed in red with a red border, and is transformed to uppercase.
 
@@ -1068,7 +1065,7 @@ workspace:
   select_pages_remove: Selezionare le pagine che si desidera rimuovere.
   save_page_order: Save Ordine Pagine
   reorder_hint: Riordinare le pagine trascinando.
-
+ 
   upload_pages: Upload Pages
   annotation_help: Use the links at the right to annotate the document. Keep in mind      \
     that any other reviewers will be able to see public annotations and drafts. Private   \
