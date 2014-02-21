@@ -441,10 +441,10 @@ workspace:
   make_document_public: Make document public
   document_publish_public_help: This document is public. It is currently available to users who search DocumentCloud's catalog and will be visible to the public when you embed it on your website. Change the %saccess level%s.                         
   document_publish_private_help: This document is private. It will not be visible to
-    your readers until you make it public. Change the %saccess level%s now or %s Pubblication
+    your readers until you make it public. Change the %saccess level%s now or %s publication
     date
   set_the: set the
-  document_publish_embed_test: If you want to test the embed before Pubblication, make
+  document_publish_embed_test: If you want to test the embed before publication, make
     sure to edit the embed code to use secure HTTPS URLs, and then switch back to regular
     HTTP before making the document public.
   full_page: Full Page
@@ -482,8 +482,8 @@ workspace:
 
 
   ###############################################################
-  # Pubblication date dialog
-  # Opened by selecting "Set Pubblication Date" from Publish menu
+  # publication date dialog
+  # Opened by selecting "Set publication Date" from Publish menu
   private_documents_visible_instructions:
   - This document is private.  You must make it public before it will be visible on   \
     your website or in searches of DocumentCloud's catalog. You can choose to make it \
@@ -491,8 +491,8 @@ workspace:
   - These documents are private.  You must make them public before they will be visible \
     on your website or in searches of DocumentCloud's catalog. You can choose to make  \
     them public at a future date or you can %2$schange them now%3$s.
-  set_Pubblication_date_for: Set Pubblication date for %s
-  no_past_Pubblication: "You can't set a document to be published in the past."
+  set_publication_date_for: Set publication date for %s
+  no_past_publication: "You can't set a document to be published in the past."
   make_public_on: Make public on
   at: at
   public_on: Public on
@@ -590,7 +590,7 @@ workspace:
   # Note embed dialog.  Select a Document in the organizer,
   # then select "Embed A Note" from the Publish menu
   note_embed_private: 'This document is private: notes on this document will not be visible to the public until the document is public.  Change the %saccess level%s now or'
-  Pubblication_date: Pubblication date
+  publication_date: publication date
   choose_note: Choose note
   select_with_public_note: Please select a document with at least one public note.
   embed_note_step_one: 'Step One: Select a Note to Embed'
@@ -734,7 +734,7 @@ workspace:
   select_single_to_embed: Please select a single document in order to create the embed.
   embed_document_list: Embed Document List
   embed_a_note: Embed a Note
-  set_Pubblication_date: Set Pubblication Date
+  set_publication_date: Set publication Date
   download_viewer: Download Document Viewer
   x_is_not_published: "\"%s\" is not published."
   no_permission_to_edit_x: "You don\'t have permission to edit \"%s\"."
