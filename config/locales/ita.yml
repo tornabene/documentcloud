@@ -175,9 +175,9 @@ workspace:
   choose_location_to_insert_pages: Choose a location to insert pages.
   edit_related_url: Modifica Related Article URL
   edit_published_url: Modifica Published URL
-  embed_tools: Embed Tools
-  embed_document: Embed this Document
-  embed_note: Embed a Note
+  embed_tools: Strumenti embed
+  embed_document: Embed questo Documento
+  embed_note: Embed una Nota
   page_tools: Page Tools
   insert_replace_pages: Insert/Replace Pages
   replace_page_x: Replace page %d
@@ -598,7 +598,7 @@ workspace:
 
 
   # Terms & Privacy are links at the bottom of the Organizer
-  terms: Terms
+  terms: Termini
   privacy: Privacy
 
   # These are buttons on the front of the help page
@@ -732,7 +732,7 @@ workspace:
   demo_no_viewer: Demo accounts are not allowed to download viewers. %s if you need a full featured account.
   select_single_to_embed: Please select a single document in order to create the embed.
   embed_document_list: Embed Document List
-  embed_a_note: Embed a Note
+  embed_a_note: Embed una Nota
   set_publication_date: Set publication Date
   download_viewer: Download Document Viewer
   x_is_not_published: "\"%s\" is not published."
@@ -1008,16 +1008,16 @@ workspace:
   - Access updated for %d documents
   close_while_text_reprocess: The text is being processed. Please close this document.
   force_ocr: Forza OCR
-  text_reprocess_help: Reprocess this document to take advantage of improvements to our text extraction tools.                                           \
+  text_reprocess_help: Reprocess this document to take advantage of improvements to our text extraction tools.                                     \
                        Choose "Force OCR" (optical character recognition) to ignore any embedded text information and use Tesseract before reprocessing. \
                        The document will close while it's being rebuilt. Are you sure you want to proceed? 
   reprocess: Riprocessa
   choose_location_to_insert_pages: Choose a location to insert pages.
   edit_related_url: Modifica Related Article URL
   edit_published_url: Modifica Published URL
-  embed_tools: Embed Tools
-  embed_document: Embed this Document
-  embed_note: Embed a Note
+  embed_tools: Strumenti embed
+  embed_document: Embed questo Documento
+  embed_note: Embed una Nota
   page_tools: Page Tools
   insert_replace_pages: Insert/Replace Pages
   replace_page_x: Replace page %d
@@ -1570,7 +1570,7 @@ workspace:
   demo_no_viewer: Demo accounts are not allowed to download viewers. %s if you need a full featured account.
   select_single_to_embed: Please select a single document in order to create the embed.
   embed_document_list: Embed Document List
-  embed_a_note: Embed a Note
+  embed_a_note: Embed una Nota
   set_publication_date: Set publication Date
   download_viewer: Download Document Viewer
   x_is_not_published: "\"%s\" is not published."
