@@ -685,11 +685,11 @@ workspace:
   - Really delete %d documents?
 
   # "Sort" menu from the toolbar
-  sort_by_relevance: Sort by Relevance
-  sort_by_date_uploaded: Sort by Date Uploaded
-  sort_by_title: Sort by Title
-  sort_by_source: Sort by Source
-  sort_by_length: Sort by Length
+  sort_by_relevance: Ordina per Rilevanza
+  sort_by_date_uploaded: Ordina per Data di Caricamento
+  sort_by_title: Ordina per Titolo
+  sort_by_source: Ordina per Sorgente
+  sort_by_length: Ordina per Lunghezza
 
   # Tthe only translatable string on the "Projects" menu
   # The other options are auto-generated based on the projects names
