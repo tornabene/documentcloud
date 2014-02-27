@@ -1,4 +1,5 @@
-require_relative 'aws_s3_store'
+#require_relative 'aws_s3_store'
+require_relative 's3_store'
 require_relative 'file_system_store'
 Dir[File.dirname(__FILE__) + '/*.rb'].each {|file| require file }
 
@@ -12,10 +13,10 @@ module DC
         include FileSystemStore
         extend FileSystemStore::ClassMethods
       else
-        #include S3Store
-        #extend S3Store::ClassMethods
-        include AwsS3Store
-        extend  AwsS3Store::ClassMethods
+        include S3Store
+        extend S3Store::ClassMethods
+        #include AwsS3Store
+        #extend  AwsS3Store::ClassMethods
       end
     end
 

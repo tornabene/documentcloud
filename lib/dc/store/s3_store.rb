@@ -4,7 +4,7 @@ module DC
     # An implementation of an AssetStore.
     module S3Store
 
-      BUCKET_NAME     = Rails.env.production? ? 's3.documentcloud.org' : "dcloud_#{Rails.env}"
+      BUCKET_NAME     =  'dcloud-staging'
 
       AUTH_PERIOD     = 5.minutes
 
@@ -20,10 +20,10 @@ module DC
 
       module ClassMethods
         def asset_root
-          Rails.env.production? ? "http://s3.documentcloud.org" : "http://s3.amazonaws.com/#{BUCKET_NAME}"
+          "http://s3.ipublic.org:8080/#{BUCKET_NAME}"
         end
         def web_root
-          Thread.current[:ssl] ? "https://s3.amazonaws.com/#{BUCKET_NAME}" : asset_root
+          asset_root
         end
       end
 
@@ -40,7 +40,7 @@ module DC
       end
 
       def authorized_url(path)
-        interface = Thread.current[:ssl] ? secure_s3.interface : s3.interface
+        interface =  s3.interface
         interface.generate_link 'GET', {:url => "#{BUCKET_NAME}/#{CGI::escape(path)}"}, AUTH_PERIOD
       end
 
@@ -176,7 +176,7 @@ module DC
       end
 
       def create_s3
-        RightAws::S3.new(@key, @secret, S3_PARAMS.merge(:protocol => 'http', :port => 80))
+        RightAws::S3.new(@key, @secret, S3_PARAMS.merge(:server => 's3.ipublic.org' ,:protocol => 'http', :port => 8080))
       end
 
       def secure_s3

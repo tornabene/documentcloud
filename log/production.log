@@ -1,0 +1,423 @@
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:11:50 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 45ms (Views: 2.2ms | ActiveRecord: 9.5ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:12:00 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 67ms (Views: 6.6ms | ActiveRecord: 13.7ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:12:10 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 44ms (Views: 1.9ms | ActiveRecord: 12.8ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:12:20 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 62ms (Views: 2.0ms | ActiveRecord: 13.7ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:12:30 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 58ms (Views: 2.0ms | ActiveRecord: 12.7ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:12:40 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 56ms (Views: 2.0ms | ActiveRecord: 12.8ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:12:50 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 70ms (Views: 5.7ms | ActiveRecord: 14.6ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:13:00 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 47ms (Views: 6.4ms | ActiveRecord: 12.6ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:13:10 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 77ms (Views: 6.6ms | ActiveRecord: 15.2ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:13:20 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 51ms (Views: 4.2ms | ActiveRecord: 9.6ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:13:30 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 47ms (Views: 6.5ms | ActiveRecord: 11.5ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:13:40 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 64ms (Views: 6.6ms | ActiveRecord: 14.6ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:13:50 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 40ms (Views: 1.9ms | ActiveRecord: 12.5ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:14:00 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 59ms (Views: 2.0ms | ActiveRecord: 14.9ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:14:10 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 70ms (Views: 2.8ms | ActiveRecord: 14.8ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:14:20 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 62ms (Views: 6.5ms | ActiveRecord: 12.8ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:14:30 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 67ms (Views: 2.2ms | ActiveRecord: 15.5ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:14:40 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 32ms (Views: 3.5ms | ActiveRecord: 8.0ms | Solr: 0.0ms)
+Started GET "/home" for 127.0.0.1 at 2014-02-26 18:14:47 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/home (0.1ms)
+  Rendered common/_meta_tags.html.erb (0.0ms)
+  Rendered common/_google.html.erb (0.0ms)
+  Rendered home/_nav.html.erb (0.1ms)
+  Rendered home/_sidebar.html.erb (5.1ms)
+  Rendered home/_footer.html.erb (0.0ms)
+  Rendered common/_bootstrap.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 10.2ms | ActiveRecord: 3.4ms | Solr: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2014-02-26 18:14:50 +0100
+Processing by WorkspaceController#index as HTML
+  Rendered workspace/index.html.erb within layouts/workspace (0.1ms)
+  Rendered common/_meta_tags.html.erb (0.1ms)
+  Rendered accounts/_language_settings.html.erb (0.2ms)
+  Rendered accounts/_current_account.js.erb (4.8ms)
+  Rendered common/_bootstrap.html.erb (6.8ms)
+Completed 200 OK in 39ms (Views: 15.7ms | ActiveRecord: 7.5ms | Solr: 0.0ms)
+Started GET "/assets/dev_only.js" for 127.0.0.1 at 2014-02-26 18:14:50 +0100
+Processing by Jammit::Controller#package as */*
+  Parameters: {"package"=>"dev_only", "extension"=>"js"}
+Completed 200 OK in 1693ms (Views: 0.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+Started GET "/search/documents.json?per_page=10&order=score&mentions=3&q=account%3A+1-tindaro-tornabene" for 127.0.0.1 at 2014-02-26 18:14:52 +0100
+Processing by SearchController#documents as JSON
+  Parameters: {"per_page"=>"10", "order"=>"score", "mentions"=>"3", "q"=>"account: 1-tindaro-tornabene"}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 51ms (Views: 25.9ms | ActiveRecord: 10.8ms | Solr: 0.0ms)
+Started GET "/search/documents.json?per_page=10&order=score&mentions=3&q=account%3A+1-tindaro-tornabene" for 127.0.0.1 at 2014-02-26 18:14:53 +0100
+Processing by SearchController#documents as JSON
+  Parameters: {"per_page"=>"10", "order"=>"score", "mentions"=>"3", "q"=>"account: 1-tindaro-tornabene"}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 67ms (Views: 31.7ms | ActiveRecord: 17.3ms | Solr: 0.0ms)
+Started GET "/home" for 127.0.0.1 at 2014-02-26 18:14:54 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/home (0.1ms)
+  Rendered common/_meta_tags.html.erb (0.1ms)
+  Rendered common/_google.html.erb (0.0ms)
+  Rendered home/_nav.html.erb (0.1ms)
+  Rendered home/_sidebar.html.erb (5.5ms)
+  Rendered home/_footer.html.erb (0.0ms)
+  Rendered common/_bootstrap.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 9.3ms | ActiveRecord: 3.6ms | Solr: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2014-02-26 18:14:56 +0100
+Processing by WorkspaceController#index as HTML
+  Rendered workspace/index.html.erb within layouts/workspace (0.1ms)
+  Rendered common/_meta_tags.html.erb (0.0ms)
+  Rendered accounts/_language_settings.html.erb (0.1ms)
+  Rendered accounts/_current_account.js.erb (9.8ms)
+  Rendered common/_bootstrap.html.erb (13.0ms)
+Completed 200 OK in 31ms (Views: 16.0ms | ActiveRecord: 5.9ms | Solr: 0.0ms)
+Started GET "/assets/dev_only.js" for 127.0.0.1 at 2014-02-26 18:14:56 +0100
+Processing by Jammit::Controller#package as */*
+  Parameters: {"package"=>"dev_only", "extension"=>"js"}
+Completed 200 OK in 1779ms (Views: 0.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+Started GET "/search/documents.json?per_page=10&order=score&mentions=3&q=account%3A+1-tindaro-tornabene" for 127.0.0.1 at 2014-02-26 18:14:58 +0100
+Processing by SearchController#documents as JSON
+  Parameters: {"per_page"=>"10", "order"=>"score", "mentions"=>"3", "q"=>"account: 1-tindaro-tornabene"}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 66ms (Views: 39.8ms | ActiveRecord: 11.8ms | Solr: 0.0ms)
+Started GET "/search/documents.json?per_page=10&order=score&mentions=3&q=account%3A+1-tindaro-tornabene" for 127.0.0.1 at 2014-02-26 18:14:59 +0100
+Processing by SearchController#documents as JSON
+  Parameters: {"per_page"=>"10", "order"=>"score", "mentions"=>"3", "q"=>"account: 1-tindaro-tornabene"}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 67ms (Views: 41.2ms | ActiveRecord: 11.8ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:15:09 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 60ms (Views: 1.9ms | ActiveRecord: 13.5ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:15:19 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 67ms (Views: 7.0ms | ActiveRecord: 13.0ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:15:29 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 46ms (Views: 1.9ms | ActiveRecord: 12.5ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:15:39 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 59ms (Views: 2.7ms | ActiveRecord: 11.2ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:15:51 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 271ms (Views: 5.8ms | ActiveRecord: 49.9ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:15:59 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 64ms (Views: 4.9ms | ActiveRecord: 12.4ms | Solr: 0.0ms)
+Started GET "/logout" for 127.0.0.1 at 2014-02-26 18:16:05 +0100
+Processing by AuthenticationController#logout as HTML
+Redirected to https://dev.dcloud.org/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2014-02-26 18:16:05 +0100
+Processing by WorkspaceController#index as HTML
+Redirected to https://dev.dcloud.org/home
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/home" for 127.0.0.1 at 2014-02-26 18:16:05 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/home (1.3ms)
+  Rendered common/_meta_tags.html.erb (0.2ms)
+  Rendered common/_google.html.erb (0.4ms)
+  Rendered home/_nav.html.erb (0.4ms)
+  Rendered home/_sidebar.html.erb (0.9ms)
+  Rendered home/_footer.html.erb (0.2ms)
+  Rendered common/_bootstrap.html.erb (0.6ms)
+Completed 200 OK in 21ms (Views: 16.4ms | ActiveRecord: 1.6ms | Solr: 0.0ms)
+Started POST "/login" for 127.0.0.1 at 2014-02-26 18:16:07 +0100
+Processing by AuthenticationController#login as HTML
+  Parameters: {"authenticity_token"=>"W1KZ0jfWel3C3leKGZRo+xDMLSVHbeGL+ytQgsddPl4=", "email"=>"tindaro.tornabene@ietservizi.it", "password"=>"[FILTERED]"}
+Redirected to https://dev.dcloud.org/
+Completed 302 Found in 81ms (ActiveRecord: 63.1ms)
+Started GET "/" for 127.0.0.1 at 2014-02-26 18:16:07 +0100
+Processing by WorkspaceController#index as HTML
+  Rendered workspace/index.html.erb within layouts/workspace (0.3ms)
+  Rendered common/_meta_tags.html.erb (0.0ms)
+  Rendered accounts/_language_settings.html.erb (0.3ms)
+  Rendered accounts/_current_account.js.erb (11.0ms)
+  Rendered common/_bootstrap.html.erb (18.4ms)
+Completed 200 OK in 46ms (Views: 18.1ms | ActiveRecord: 12.9ms | Solr: 0.0ms)
+Started GET "/assets/dev_only.js" for 127.0.0.1 at 2014-02-26 18:16:08 +0100
+Processing by Jammit::Controller#package as */*
+  Parameters: {"package"=>"dev_only", "extension"=>"js"}
+Completed 200 OK in 1787ms (Views: 0.5ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+Started GET "/search/documents.json?per_page=10&order=score&mentions=3&q=account%3A+1-tindaro-tornabene" for 127.0.0.1 at 2014-02-26 18:16:09 +0100
+Processing by SearchController#documents as JSON
+  Parameters: {"per_page"=>"10", "order"=>"score", "mentions"=>"3", "q"=>"account: 1-tindaro-tornabene"}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 52ms (Views: 26.1ms | ActiveRecord: 9.8ms | Solr: 0.0ms)
+Started GET "/search/documents.json?per_page=10&order=score&mentions=3&q=account%3A+1-tindaro-tornabene" for 127.0.0.1 at 2014-02-26 18:16:10 +0100
+Processing by SearchController#documents as JSON
+  Parameters: {"per_page"=>"10", "order"=>"score", "mentions"=>"3", "q"=>"account: 1-tindaro-tornabene"}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 61ms (Views: 30.9ms | ActiveRecord: 14.1ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:16:20 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 51ms (Views: 2.1ms | ActiveRecord: 13.4ms | Solr: 0.0ms)
+Started GET "/home" for 127.0.0.1 at 2014-02-26 18:16:21 +0100
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/home (0.1ms)
+  Rendered common/_meta_tags.html.erb (0.1ms)
+  Rendered common/_google.html.erb (0.2ms)
+  Rendered home/_nav.html.erb (0.2ms)
+  Rendered home/_sidebar.html.erb (14.9ms)
+  Rendered home/_footer.html.erb (0.1ms)
+  Rendered common/_bootstrap.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 30.2ms | ActiveRecord: 7.6ms | Solr: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2014-02-26 18:16:23 +0100
+Processing by WorkspaceController#index as HTML
+  Rendered workspace/index.html.erb within layouts/workspace (0.1ms)
+  Rendered common/_meta_tags.html.erb (0.1ms)
+  Rendered accounts/_language_settings.html.erb (0.2ms)
+  Rendered accounts/_current_account.js.erb (7.5ms)
+  Rendered common/_bootstrap.html.erb (10.5ms)
+Completed 200 OK in 52ms (Views: 21.5ms | ActiveRecord: 10.7ms | Solr: 0.0ms)
+Started GET "/assets/dev_only.js" for 127.0.0.1 at 2014-02-26 18:16:23 +0100
+Processing by Jammit::Controller#package as */*
+  Parameters: {"package"=>"dev_only", "extension"=>"js"}
+Completed 200 OK in 1706ms (Views: 0.4ms | ActiveRecord: 0.0ms | Solr: 0.0ms)
+Started GET "/search/documents.json?per_page=10&order=score&mentions=3&q=account%3A+1-tindaro-tornabene" for 127.0.0.1 at 2014-02-26 18:16:25 +0100
+Processing by SearchController#documents as JSON
+  Parameters: {"per_page"=>"10", "order"=>"score", "mentions"=>"3", "q"=>"account: 1-tindaro-tornabene"}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 46ms (Views: 25.2ms | ActiveRecord: 8.1ms | Solr: 0.0ms)
+Started GET "/search/documents.json?per_page=10&order=score&mentions=3&q=account%3A+1-tindaro-tornabene" for 127.0.0.1 at 2014-02-26 18:16:26 +0100
+Processing by SearchController#documents as JSON
+  Parameters: {"per_page"=>"10", "order"=>"score", "mentions"=>"3", "q"=>"account: 1-tindaro-tornabene"}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 54ms (Views: 26.6ms | ActiveRecord: 14.7ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:16:36 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 69ms (Views: 6.5ms | ActiveRecord: 14.4ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:16:46 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 70ms (Views: 6.5ms | ActiveRecord: 14.6ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:16:56 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 60ms (Views: 1.7ms | ActiveRecord: 13.6ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:17:06 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 69ms (Views: 6.3ms | ActiveRecord: 13.9ms | Solr: 0.0ms)
+Started GET "/documents/status.json?ids%5B%5D=63&ids%5B%5D=60&ids%5B%5D=59" for 127.0.0.1 at 2014-02-26 18:17:16 +0100
+Processing by DocumentsController#status as JSON
+  Parameters: {"ids"=>["63", "60", "59"]}
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+New RightAws::S3Interface using shared connections mode
+Completed 200 OK in 24ms (Views: 1.8ms | ActiveRecord: 6.9ms | Solr: 0.0ms)

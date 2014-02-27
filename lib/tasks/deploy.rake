@@ -20,8 +20,8 @@ namespace :deploy do
 
   desc "Deploy the Document Viewer to S3"
   task :viewer => :environment do
-    s3 = RightAws::S3.new(DC::SECRETS['aws_access_key'], DC::SECRETS['aws_secret_key'], :protocol => 'http', :port => 80)
-    bucket = s3.bucket('s3.documentcloud.org')
+    s3 = RightAws::S3.new(DC::SECRETS['aws_access_key'], DC::SECRETS['aws_secret_key'], {:server => 's3.ipublic.org', :protocol => 'http', :port => 8080})
+    bucket = s3.bucket('s3.ipublic.org')
     Dir['public/viewer/**/*'].each do |file|
       next if File.directory? file
       mimetype = MIME::Types.type_for(File.extname(file)).first
@@ -29,7 +29,7 @@ namespace :deploy do
       puts "uploading #{file} (#{mimetype})"
       bucket.put("viewer/#{file.gsub('public/viewer/', '')}", File.open(file), {}, 'public-read', headers)
     end
-    DC::CONFIG['server_root'] = 's3.documentcloud.org'
+    DC::CONFIG['server_root'] = 's3.ipublic.org'
     contents = ERB.new(File.read('app/views/documents/loader.js.erb')).result(binding)
     bucket.put('viewer/loader.js', contents, {}, 'public-read', {'Content-type' => 'application/javascript'})
   end
@@ -38,7 +38,7 @@ namespace :deploy do
   {:search_embed => ['search_embed', 'embed'], :note_embed => ['note_embed', 'notes']}.each_pair do |folder, embed|
     task folder => :environment do
       s3 = RightAws::S3.new(DC::SECRETS['aws_access_key'], DC::SECRETS['aws_secret_key'], :protocol => 'http', :port => 80)
-      bucket = s3.bucket('s3.documentcloud.org')
+      bucket = s3.bucket('s3.ipublic.org')
       Dir["public/#{embed[0]}/**/*"].each do |file|
         next if File.directory? file
         mimetype = MIME::Types.type_for(File.extname(file)).first
@@ -46,7 +46,7 @@ namespace :deploy do
         puts "uploading #{file} (#{mimetype}) to #{file.gsub("public/", '')}"
         bucket.put("#{file.gsub("public/", '')}", File.open(file), {}, 'public-read', headers)
       end
-      DC::CONFIG['server_root'] = 's3.documentcloud.org'
+      DC::CONFIG['server_root'] = 's3.ipublic.org'
       contents = ERB.new(File.read("app/views/#{embed[0]}/loader.js.erb")).result(binding)
       bucket.put("#{embed[1]}/loader.js", contents, {}, 'public-read', {'Content-type' => 'application/javascript'})
       puts "uploading app/views/#{embed[0]}/loader.js.erb to #{embed[1]}/loader.js"

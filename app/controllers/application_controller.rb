@@ -15,7 +15,9 @@ class ApplicationController < ActionController::Base
   end
 
   if Rails.env.production?
-    around_action :notify_exceptions
+   # around_action :notify_exceptions
+    around_action :perform_profile
+    after_action :debug_api
   end
 
   protected

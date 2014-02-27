@@ -2,9 +2,6 @@
 # The URL where you're planning on running the central server/queue/database.
 :central_server:      <%= secrets['central_server'] %>
 
-:disabled_actions:
-  - large_document_import
-  - reindex_everything
 
 # The following settings allow you to control the number of workers that can run
 # on a given node, to prevent the node from becoming overloaded. 'max_workers'
@@ -24,7 +21,6 @@
 :storage:             s3
 
 # Please provide your AWS credentials for S3 storage of job output.
-<% secrets = YAML.load_file('secrets/secrets.yml')[ENV['RAILS_ENV']] %>
 :aws_access_key:      <%= secrets['aws_access_key'] %>
 :aws_secret_key:      <%= secrets['aws_secret_key'] %>
 
@@ -32,7 +28,7 @@
 # to keep all resulting files on S3 private. If so, you'll receive authenticated
 # S3 URLs as job output, good for 24 hours. If left public, you'll get the
 # straight URLs to the files on S3.
-:s3_bucket:           dcloud_crowd_production
+:s3_bucket:           dcloud-staging
 :s3_authentication:   no
 
 # If you're using the 'filesystem' storage, perhaps with an NFS share or
@@ -44,7 +40,7 @@
 # to the central server). If yes, specify the login and password that all
 # requests must provide for authentication.
 :http_authentication: no
-:login:               <%= secrets['username'] %>
+:login:               documentcloud
 :password:            <%= secrets['db_password'] %>
 
 # By default, CloudCrowd looks for installed actions inside the 'actions'

@@ -17,10 +17,10 @@
     <%= include_stylesheets :ie_only, :embed_assets => false %>
     <%= include_javascripts :ie_only %>
   <![endif]-->
-  <% if Rails.env.development? %>
+  <% if Rails.env.development? || Rails.env.production? %>
     <%= include_javascripts :dev_only %>
   <% end %>
-  <% if @include_analytics && Rails.env.production? %>
+  <% if @include_analytics && Rails.env.staging? %>
     <%= render :partial => 'common/google' %>
   <% end %>
   <%= csrf_meta_tag %> 
@@ -31,7 +31,7 @@
     <div id="topbar" class="header gradient_mid">
       <div id="logo">
         <a href="/home"><div id="cloud_edge"></div></a>
-        <div id="wordmark" class="logo_words"><a href="/">DocumentCloud</a></div>
+        <div id="wordmark" class="logo_words"><a href="/">NtipaCloud</a></div>
         <h1 id="title" class="logo_words"><%= @title %></h1>
       </div>
     </div>

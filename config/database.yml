@@ -20,8 +20,8 @@ staging:
 
 production:
   <<: *defaults
-  database: dcloud_production
+  database: dcloud_staging
 
 test:
   <<: *defaults
-  database: dcloud_test
+  database: dcloud_staging

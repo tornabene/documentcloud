@@ -20,12 +20,6 @@ GIT
       jsmin (>= 1.0.1)
 
 GIT
-  remote: git://github.com/documentcloud/right_aws.git
-  revision: 57beab61fac4a621614b67f2014ec879bac25890
-  specs:
-    right_aws (2.0.1)
-
-GIT
   remote: git://github.com/nathanstitt/calais.git
   revision: dbdc919fa087a4498417b756d1ab3e64eeae5e5b
   branch: newer_nokogiri
@@ -191,6 +185,8 @@ GEM
     rdiscount (2.1.7)
     rest-client (1.6.7)
       mime-types (>= 1.16)
+    right_aws (3.1.0)
+      right_http_connection (>= 1.2.5)
     right_http_connection (1.4.0)
     rsolr (1.0.9)
       builder (>= 2.1.2)
@@ -269,7 +265,7 @@ DEPENDENCIES
   rake
   rdiscount (~> 2.1.6)
   rest-client (~> 1.6.7)
-  right_aws (= 2.0.1)!
+  right_aws
   right_http_connection
   rubyzip (~> 1.1.0)
   sanitize (~> 2.0.6)
